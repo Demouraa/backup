@@ -1,0 +1,47 @@
+.navBarContainer{
+    color: white;
+    position: fixed;
+    z-index: 200;
+    height: 100px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 1px solid black;
+    transition: 1s;
+}
+
+.myNav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.navItems{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navItems a{
+    text-decoration: none;
+    color: white;
+}
+
+.navItems a:hover{
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+    transition: .8s;
+}
+
+.onRow{
+    background-color: black;
+    height: 70px;
+}
+
+.myNavRow{
+    margin-top: 16px;
+}

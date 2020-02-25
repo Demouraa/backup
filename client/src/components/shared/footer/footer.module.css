@@ -1,0 +1,70 @@
+.FContainer{
+    background-color: black;
+    color: white;
+    min-height: 250px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.footer{
+    max-width: 1070px;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-gap: 15px;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    border-bottom: 1px solid white;
+}
+
+.FColumn h3{
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.FColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250px;
+}
+
+.FColumn a {
+    text-decoration: none;
+    color: white;
+    margin: 2px;
+}
+
+.FColumn a:hover {
+    color: white;
+    text-decoration: underline; 
+}
+
+.FContato{
+    width: 250px;
+}
+
+.FContato h3{
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.copyright{
+    margin: auto;
+}
+
+.copyright p{
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+
+@media (max-width: 1064px){
+    .copyright p{
+        padding-top: 0px;
+        padding-bottom: 17px;
+    }
+}
