@@ -11,7 +11,7 @@ const NavBar = props => {
         const scrolled = document.documentElement.scrollTop || document.body.scrollTop;
         setScrollDepth(scrolled);
 
-        if(scrolled > 100){
+        if(scrolled > 40){
             setNavBar(true);
         } else {
             setNavBar(false);
@@ -32,8 +32,8 @@ const NavBar = props => {
                     <a href="#">HOME</a>
                     <a href="#">PARA EMPRESAS</a>
                     <a href="#">PARA COLETORES</a>
-                    <a href="#">Entrar</a>
-                    <a className="btn btn-success" href="#">Cadastrar</a>
+                    <a href="#">ENTRAR</a>
+                    <a className="btn btn-success" href="#">CADASTRAR</a>
                 </div>
             </nav>
         </header>
