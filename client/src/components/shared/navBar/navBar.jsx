@@ -27,14 +27,14 @@ const NavBar = props => {
     useEffect( () => window.addEventListener('scroll', determineUserScrollDepth) );
 
     return ( 
-        <header className={ cx(style.navBarContainer, {[style.onRow]: check}, {[style.onRow]: navBar}) }>
-            <nav className={ cx(style.myNav, {[style.myNavRow]: check}, {[style.myNavRow]: navBar}) }>
+        <header className={ cx(style.navBarContainer, {[style.onRow]: props.navStatus}, {[style.onRow]: check}, {[style.onRow]: navBar}) }>
+            <nav className={ cx(style.myNav, {[style.myNavRow]: props.navStatus}, {[style.myNavRow]: check}, {[style.myNavRow]: navBar}) }>
                 
                 <div className={style.logoContainer}>
                     ECOMAKERS
                 </div>
 
-                <input className={cx(style.position, style.responsiveB, {[style.positionMargin]: navBar === false}, {[style.checkBoxMargin]: check})}
+                <input className={cx(style.position, style.responsiveB, {[style.checkBoxMargin]: props.navStatus}, {[style.positionMargin]: navBar === false}, {[style.checkBoxMargin]: check})}
                 onClick={handleChange} type="checkbox" id="res-menu"/>
 
                 <div className={cx(style.lineContainer, style.responsiveB, {[style.rightM]: check})}>

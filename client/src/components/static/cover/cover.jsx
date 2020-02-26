@@ -8,23 +8,23 @@ const Cover = props => {
             <div className={style.cover}></div>
             <div className={style.content}>
                 <h2>BEM VINDO A ECOMAKERS</h2>
-                <Typical
-                    className={style.typical}
-                    loop={Infinity}
-                    wrapper="b"
-                    steps={[
-                        'Nós somos verde',
-                        2000,
-                        'Nós somos circulares',
-                        2000,
-                        'Nós somos a evolução',
-                        2000,
-                        'Queremos o progresso',
-                        2000,
-                        'Queremos garantir um futuro melhor',
-                        2000
-                    ]}
-                />
+                <h3>Somos
+                    <Typical
+                        className={style.typical}
+                        loop={Infinity}
+                        wrapper="b"
+                        steps={[
+                            ' verde',
+                            2000,
+                            ' circulares',
+                            2000,
+                            ' evolução',
+                            2000,
+                            ' sustentaveis',
+                            2000
+                        ]}
+                    />
+                </h3>
             </div>
         </section>
     );
