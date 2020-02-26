@@ -8,6 +8,6 @@ const Cover = props => {
             <div>BEM VINDO A ECOMAKERS</div>
         </section>
     );
-} b 
+}
  
 export default Cover;

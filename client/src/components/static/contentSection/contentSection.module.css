@@ -48,3 +48,16 @@
         width: 90vw;
     }
 }
+
+@media (max-width: 420px){
+    .CSContainer{
+        width: 99vw;
+        justify-content: center;
+    }
+    .CScontent{
+        margin: 0;
+    }
+    .CSImage{
+        width: 90vw;
+    }
+}

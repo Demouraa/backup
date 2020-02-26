@@ -6,6 +6,7 @@ import cx from 'classnames';
 const NavBar = props => {
     const [scrollDepth, setScrollDepth] = useState(0);
     const [navBar, setNavBar] = useState(false);
+    const [check, setCheck] = useState(false);
 
     let determineUserScrollDepth = () => {
         const scrolled = document.documentElement.scrollTop || document.body.scrollTop;
@@ -18,14 +19,27 @@ const NavBar = props => {
         }
     }
 
+    const handleChange = e => {
+        setCheck(e.target.checked);
+        console.log(check)
+    }
+
     useEffect( () => window.addEventListener('scroll', determineUserScrollDepth) );
 
     return ( 
-        <header className={ cx(style.navBarContainer, {[style.onRow]: navBar}) }>
-            <nav className={ cx(style.myNav, {[style.myNavRow]: navBar}) }>
+        <header className={ cx(style.navBarContainer, {[style.onRow]: check}, {[style.onRow]: navBar}) }>
+            <nav className={ cx(style.myNav, {[style.myNavRow]: check}, {[style.myNavRow]: navBar}) }>
                 
                 <div className={style.logoContainer}>
-                    Ecomakers
+                    ECOMAKERS
+                </div>
+
+                <input className={cx(style.position, style.responsiveB, {[style.positionMargin]: navBar === false}, {[style.checkBoxMargin]: check})}
+                onClick={handleChange} type="checkbox" id="res-menu"/>
+
+                <div className={cx(style.lineContainer, style.responsiveB, {[style.rightM]: check})}>
+                    <div className={style.line}></div>
+                    <div className={style.line}></div>
                 </div>
 
                 <div className={style.navItems}>
