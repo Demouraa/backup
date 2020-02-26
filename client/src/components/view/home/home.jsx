@@ -12,7 +12,7 @@ import Navbar from '../../shared/navBar/navBar';
 
 class App extends Component {
   state = {
-    myState: ''
+    myState: []
   };
 
   componentDidMount() {

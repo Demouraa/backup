@@ -3,10 +3,13 @@
     height: 100vh;
     background: linear-gradient(
     rgba(0, 0, 0, 0.60),
-    rgba(0, 0, 0, 0.65)), url("./economia-circular.jpg") no-repeat center center;
+    rgba(14, 5, 5, 0.65)), url("./economia-circular.jpg") no-repeat center center;
     background-size: cover;
     color: white;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cover{
@@ -15,4 +18,24 @@
     opacity: .5;
     width: 100%;
     height: 100vh;
+}
+
+
+.content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.typical{
+    color: white;
+    font-size: 20px;
+}
+
+
+@media (max-width: 388px){
+    .content h2{
+        font-size: 30px;
+    }
 }
