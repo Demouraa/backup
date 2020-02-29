@@ -4,6 +4,7 @@ import style from './postArticle.module.css';
 import CKEditor from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { useState } from 'react';
+import ReactHTMLParser from 'react-html-parser';
 
 const PostArticle = () => {
     const [value, setValue] = useState("");
@@ -26,6 +27,9 @@ const PostArticle = () => {
                 </div>
 
                 {value}
+                <h2>My Heading nigas</h2>
+                <p>This is my paragraph:</p>
+                <blockquote><p>This is my quote</p></blockquote>
             </section>
         </div>
     );
